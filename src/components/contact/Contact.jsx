@@ -2,8 +2,33 @@ import React from "react";
 import "./contact.css";
 import { IoIosPaperPlane } from "react-icons/io";
 import { BsWhatsapp } from "react-icons/bs";
+import { useRef } from "react";
+import emailjs from "@emailjs/browser";
+
+const {
+  REACT_APP_SERVICE_ID,
+  REACT_APP_TEMPLATE_ID,
+  REACT_APP_PUBLIC_KEY,
+  REACT_APP_PHONE,
+} = process.env;
 
 const Contact = () => {
+  const form = useRef();
+
+  const sendEmail = (e) => {
+    e.preventDefault();
+
+    emailjs.sendForm(
+      `${REACT_APP_SERVICE_ID}`,
+      `${REACT_APP_TEMPLATE_ID}`,
+      form.current,
+      `${REACT_APP_PUBLIC_KEY}`
+    );
+    e.target.reset();
+  };
+
+  const phone = `https://api.whatsapp.com/send?phone=+${REACT_APP_PHONE}`;
+
   return (
     <section id="contact">
       <h2>Get in touch!</h2>
@@ -26,16 +51,12 @@ const Contact = () => {
             <BsWhatsapp className="contact__option-icon" />
             <h4>WhatsApp</h4>
             <h5>Say hello</h5>
-            <a
-              href="https://api.whatsapp.com/send?phone=+541135590980"
-              target="_blank"
-              rel="noreferrer"
-            >
+            <a href={phone} target="_blank" rel="noreferrer">
               Send a message
             </a>
           </article>
         </div>
-        <form action="">
+        <form ref={form} onSubmit={sendEmail}>
           <input
             type="text"
             name="name"
@@ -50,7 +71,7 @@ const Contact = () => {
             required
           ></textarea>
           <button type="submit" className="btn btn-primary">
-            Send
+            SEND
           </button>
         </form>
       </div>
