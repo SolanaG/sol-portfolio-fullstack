@@ -53,6 +53,7 @@ header {
 
 .me > img {
   border-radius: 2rem;
+  overflow: hidden;
 }
 
 .scroll__down {
@@ -80,13 +81,13 @@ header {
 
 @media screen and (max-width: 1024px) {
   header {
-    height: 68vh;
+    height: 117vh;
   }
 }
 
 @media screen and (max-width: 600px) {
   header {
-    height: 100vh;
+    height: 117vh;
   }
   .header__socials,
   .scroll__down {

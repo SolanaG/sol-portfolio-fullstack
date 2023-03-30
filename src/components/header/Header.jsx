@@ -1,7 +1,7 @@
 import React from "react";
 import "./header.css";
 import CTA from "./CTA";
-import BOTANIC from "../../assets/flowers.jpg";
+import FLOWERS from "../../assets/flowers.jpg";
 import HeaderSocials from "./HeaderSocials";
 import HeaderScrollDown from "./HeaderScrollDown";
 import Nav from "../nav/Nav";
@@ -17,7 +17,7 @@ const Header = () => {
         <CTA />
         <HeaderSocials />
         <div className="me">
-          <img src={BOTANIC} alt="botanic" />
+          <img src={FLOWERS} alt="Flowers" />
         </div>
         <HeaderScrollDown />
       </div>
