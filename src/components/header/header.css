@@ -29,16 +29,25 @@ header {
   flex-direction: column;
   align-items: center;
   gap: 0.8rem;
-  position: absolute;
+  padding: 0.1rem;
+  font-size: 1.3rem;
+  position: fixed;
+  margin-left: 5rem;
   left: 0;
-  bottom: 3rem;
+  bottom: 1rem;
+  transition: var(--transition);
 }
 
 .header__socials::after {
   content: "";
   width: 1px;
-  height: 4rem;
+  height: 9rem;
   background: var(--color-primary);
+}
+
+.header__socials a:hover {
+  color: var(--color-footer);
+  font-size: 1.6rem;
 }
 
 .me {
@@ -46,7 +55,7 @@ header {
   height: 33rem;
   position: absolute;
   left: calc(50% - 11rem);
-  margin-top: 4rem;
+  margin-top: 2rem;
   overflow: hidden;
   padding: 1.5rem;
 }
@@ -61,11 +70,13 @@ header {
   flex-direction: column;
   align-items: center;
   gap: 2.4rem;
-  position: absolute;
-  bottom: 1.4rem;
+  position: fixed;
+  margin-right: 5rem;
+  bottom: 0.7rem;
   right: -2.3rem;
   font-weight: 300;
-  font-size: 0.9rem;
+  font-size: 1rem;
+  padding: 0.1rem;
 }
 
 .scroll__text {
@@ -75,7 +86,7 @@ header {
 .scroll__down::before {
   content: "";
   width: 1px;
-  height: 3.3rem;
+  height: 9rem;
   background: var(--color-primary);
 }
 
