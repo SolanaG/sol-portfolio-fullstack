@@ -52,7 +52,7 @@ header {
 
 .me {
   width: 22rem;
-  height: 33rem;
+  /* height: 33rem; */
   position: absolute;
   left: calc(50% - 11rem);
   margin-top: 2rem;
@@ -93,6 +93,12 @@ header {
 @media screen and (max-width: 1024px) {
   header {
     height: 117vh;
+  }
+  .header__socials {
+    margin-left: 1rem;
+  }
+  .scroll__down {
+    margin-right: 1rem;
   }
 }
 

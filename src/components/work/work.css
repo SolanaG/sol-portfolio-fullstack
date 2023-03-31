@@ -39,6 +39,13 @@
   justify-content: center;
 }
 
+@media screen and (max-width: 1024px) {
+  .work__container {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+}
+
 @media screen and (max-width: 600px) {
   .work__container {
     grid-template-columns: 1fr;

@@ -21,9 +21,7 @@ const Nav = () => {
           onClick={() => setActiveNav("#")}
           className={activeNav === "#" ? "active" : ""}
         >
-          <span className="links__icons">
-            <BsHexagon />
-          </span>
+          <BsHexagon className="links__icons" />
           <span>home</span>
         </a>
         <a
@@ -31,9 +29,7 @@ const Nav = () => {
           onClick={() => setActiveNav("about")}
           className={activeNav === "about" ? "active" : ""}
         >
-          <span className="links__icons">
-            <GiMermaid />
-          </span>
+          <GiMermaid className="links__icons" />
           <span>about</span>
         </a>
         <a
@@ -41,10 +37,7 @@ const Nav = () => {
           onClick={() => setActiveNav("work")}
           className={activeNav === "work" ? "active" : ""}
         >
-          <span className="links__icons">
-            <RxCode />
-          </span>
-
+          <RxCode className="links__icons" />
           <span>work</span>
         </a>
         <a
@@ -52,19 +45,17 @@ const Nav = () => {
           onClick={() => setActiveNav("experience")}
           className={activeNav === "experience" ? "active" : ""}
         >
-          <span className="links__icons">
-            <GiSpotedFlower />
+          <span className="prueba">
+            <GiSpotedFlower className="links__icons" />
+            <span>experience</span>
           </span>
-          <span>experience</span>
         </a>
         <a
           href="#skillsAndTools"
           onClick={() => setActiveNav("skillsAndTools")}
           className={activeNav === "skillsAndTools" ? "active" : ""}
         >
-          <span className="links__icons">
-            <CgToolbox />
-          </span>
+          <CgToolbox className="links__icons" />
           <span>skills & tools</span>
         </a>
         <a
@@ -72,9 +63,7 @@ const Nav = () => {
           onClick={() => setActiveNav("contact")}
           className={activeNav === "contact" ? "active" : ""}
         >
-          <span className="links__icons">
-            <GiHummingbird />
-          </span>
+          <GiHummingbird className="links__icons" />
           <span>contact</span>
         </a>
       </div>

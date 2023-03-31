@@ -25,12 +25,17 @@ nav a {
   color: var(--color-light);
   font-size: 1rem;
   border-radius: 0.4rem;
-  align-items: center;
+  align-items: center !important;
+}
+
+.prueba {
+  align-items: center !important;
 }
 
 .links__icons {
   margin-right: 0.3rem;
   margin-bottom: 0;
+  margin-top: 10px;
 }
 
 nav a:hover {

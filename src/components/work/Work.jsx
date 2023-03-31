@@ -51,7 +51,7 @@ const Work = () => {
                   target="_blank"
                   rel="noreferrer"
                 >
-                  Github
+                  Github Repo
                 </a>
                 <a
                   href={demo}
@@ -59,7 +59,7 @@ const Work = () => {
                   target="_blank"
                   rel="noreferrer"
                 >
-                  Live Demo
+                  Demo
                 </a>
               </div>
             </article>
