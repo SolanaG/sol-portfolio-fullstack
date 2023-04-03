@@ -2,64 +2,12 @@ import React from "react";
 import "./experience.css";
 import { VscCircleSmallFilled } from "react-icons/vsc";
 import { useState } from "react";
+import { buttons, descriptions } from "../../db";
 
-const buttons = [
-  { text: "Henry" },
-  { text: "Henry" },
-  { text: "Henry" },
-  { text: "Ada ITW" },
-];
-const descriptions = [
-  {
-    title: "Full Stack Developer",
-    company: "Henry",
-    link: "https://www.soyhenry.com/",
-    date: "Feb 2023 - Mar 2023",
-    pos_description: [
-      "Educational Contract",
-      "Plan, design, and built an Ecological website, related to garbage recycling.",
-      "Developed with React, Express, Chakra UI.",
-      "Agile methodologies, team work, proactivity, git flow, creativity.",
-    ],
-  },
-  {
-    title: "Full Stack Developer",
-    company: "Henry",
-    link: "https://www.soyhenry.com/",
-    date: "Jan 2022 - Feb 2022",
-    pos_description: [
-      "Educational Contract",
-      "Plan, design, and develop a cooking recipes website using JavaScript, React, Express, PostgreSQL and CSS.",
-      "Proactivity, problem resolution.",
-    ],
-  },
-  {
-    title: "Frontend Developer",
-    company: "Henry",
-    link: "https://www.soyhenry.com/",
-    date: "Nov 2022 - Dec 2022",
-    pos_description: [
-      "Educational Contract",
-      "Design and develop an Rick&Morty web application with React Js.",
-      "Fast learning.",
-    ],
-  },
-  {
-    title: "Frontend Developer",
-    company: "Ada ITW",
-    link: "https://adaitw.org/",
-    date: "Aug 2021 - Sept 2021",
-    pos_description: [
-      "Educational Project",
-      "Design and develop a website to edit memes.",
-      "Team work, problem resolution, adaptability.",
-    ],
-  },
-];
 const Experience = () => {
   const [index, setIndex] = useState(0);
   const activeClass = "active";
-  console.log(typeof index);
+
   const handleClick = (evt) => {
     setIndex(evt.target.id);
   };

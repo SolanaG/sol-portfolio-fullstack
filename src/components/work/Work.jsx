@@ -1,35 +1,6 @@
 import React from "react";
 import "./work.css";
-import IMG1 from "../../assets/memes.png";
-import IMG2 from "../../assets/magicspoon.png";
-import IMG3 from "../../assets/verdevolver.png";
-
-const data = [
-  {
-    id: 1,
-    image: IMG1,
-    title: "Editor de Memes",
-    work: "Teamwork",
-    github: "https://github.com/Lupe-Accareddu/Editor-de-Memes",
-    demo: "https://lupe-accareddu.github.io/Editor-de-Memes/",
-  },
-  {
-    id: 2,
-    image: IMG2,
-    title: "Magic Spoon",
-    work: "Personal work",
-    github: "https://github.com/SolanaG/Food-PI",
-    demo: "https://github.com/SolanaG/Food-PI",
-  },
-  {
-    id: 3,
-    image: IMG3,
-    title: "VerdeVolver",
-    work: "Teamwork",
-    github: "https://github.com/natalia-iglesias/VerDeVolver---PF",
-    demo: "https://ver-de-volver-pf.vercel.app/",
-  },
-];
+import { data } from "../../db";
 
 const Work = () => {
   return (
