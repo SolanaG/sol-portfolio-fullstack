@@ -4,6 +4,7 @@ import { IoIosPaperPlane } from "react-icons/io";
 import { BsWhatsapp } from "react-icons/bs";
 import { useRef } from "react";
 import emailjs from "@emailjs/browser";
+import toast, { Toaster } from "react-hot-toast";
 
 const {
   REACT_APP_SERVICE_ID,
@@ -15,6 +16,8 @@ const {
 const Contact = () => {
   const form = useRef();
 
+  const notify = () => toast.success("Successfully send!");
+
   const sendEmail = (e) => {
     e.preventDefault();
 
@@ -25,6 +28,7 @@ const Contact = () => {
       `${REACT_APP_PUBLIC_KEY}`
     );
     e.target.reset();
+    notify();
   };
 
   const phone = `https://api.whatsapp.com/send?phone=+${REACT_APP_PHONE}`;
@@ -73,6 +77,7 @@ const Contact = () => {
           <button type="submit" className="btn btn-primary">
             SEND
           </button>
+          <Toaster />
         </form>
       </div>
     </section>

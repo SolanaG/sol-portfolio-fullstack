@@ -58,8 +58,9 @@ const descriptions = [
 ];
 const Experience = () => {
   const [index, setIndex] = useState(0);
+  const activeClass = "active";
+  console.log(typeof index);
   const handleClick = (evt) => {
-    console.log(evt.target.id);
     setIndex(evt.target.id);
   };
   return (
@@ -69,7 +70,16 @@ const Experience = () => {
         <div className="experience__tab">
           {buttons.map((button, i) => {
             return (
-              <button key={button.text + i} id={i} onClick={handleClick}>
+              <button
+                key={button.text + i}
+                id={i}
+                className={
+                  index === i.toString()
+                    ? `simple-button ${activeClass}`
+                    : "simple-button"
+                }
+                onClick={handleClick}
+              >
                 {button.text}
               </button>
             );
