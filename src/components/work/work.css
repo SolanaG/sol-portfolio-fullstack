@@ -39,7 +39,7 @@
   justify-content: center;
 }
 
-@media screen and (max-width: 1024px) {
+@media screen and (max-width: 1115px) {
   .work__container {
     grid-template-columns: 1fr;
     gap: 2rem;

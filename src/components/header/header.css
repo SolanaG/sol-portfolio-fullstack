@@ -69,13 +69,13 @@ header {
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 2.4rem;
+  gap: 2.3rem;
   position: fixed;
   margin-right: 5rem;
   bottom: 0.7rem;
   right: -2.3rem;
   font-weight: 300;
-  font-size: 1rem;
+  font-size: 0.9rem;
   padding: 0.1rem;
 }
 
@@ -86,7 +86,7 @@ header {
 .scroll__down::before {
   content: "";
   width: 1px;
-  height: 9rem;
+  height: 8rem;
   background: var(--color-primary);
 }
 
